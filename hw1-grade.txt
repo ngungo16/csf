@@ -3,6 +3,6 @@ Evergreen Login: phamp
 
 3/3
 
-great style!
-i like your comments
-use more intermediate assignments next time, though.
+great comments!
+too much whitespace.
+something like that.
