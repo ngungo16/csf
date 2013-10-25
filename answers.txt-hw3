@@ -1,0 +1,42 @@
+Name: Ngoc(Ann) Nguyen
+Evergreen Login: ngungo16
+Computer Science Foundations
+Programming as a Way of Life
+Fall 2013
+Homework 3 
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+
+Problem 1:
+
+(No answers in this file.)
+
+Problem 2:
+GC-content: 0.43029262963
+
+Problem 3:
+When adding # in front of these lines(seq ="" ,linenum =0),it shows name error because name 'linenum' is not defined. 
+So # character is not interpreted by python and it is used to make code be read easily.
+If gc_count = 0 was commented out, this name 'gc_count' is not defined. 
+Because # character is not read by python as a name or variable with the value.
+
+
+Problem 4:
+AT-content:0.7
+
+
+Collaboration:
+
+Alex helped me run command prompt on my PC
+
+Reflection:
+
+I learned to swap elements/members in sequence and to use command to run code. 
+I wish i knew to run command HW3 on my PC earilier. 
+Putting more statements in one loop makes code shorter and run faster.
