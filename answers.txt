@@ -1,0 +1,65 @@
+Name: Ngoc(Ann) Nguyen
+Evergreen Login: ngungo16
+Computer Science Foundations
+Programming as a Way of Life
+Fall 2013
+Homework 3 
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+
+Problem 1:
+
+(No answers in this file.)
+
+Problem 2:
+GC-content: 0.43029262963
+
+Problem 3:
+When adding # in front of these lines(seq ="" ,linenum =0),it shows name error because name 'linenum' is not defined. 
+So # character is not interpreted by python and it is used to make code be read easily.
+If gc_count = 0 was commented out, this name 'gc_count' is not defined. 
+Because # character is not read by python as a name or variable with the value.
+
+
+Problem 4:
+AT-content:0.7
+
+Problem 5:
+
+G count: 5738773
+C count: 5879128
+A count: 7701287
+T count: 7661547
+
+Problem 6:
+The totalcount and seqlength are the same but the sumcount is different  in each 
+file because the GC in each file has different denominator
+(integer, the other :even).
+
+Problem 7
+AT/GC Ratio: 1.32234161747
+
+Problem 8
+GC Classification: moderate GC content
+
+
+
+
+
+
+
+
+Collaboration:
+
+did it by myself
+
+Reflection:
+
+
+Putting more statements in one loop makes code shorter and run faster.
