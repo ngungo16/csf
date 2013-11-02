@@ -1,0 +1,122 @@
+# Name:Ngoc (Ann) Nguyen
+# Evergreen Login: ngungo16
+# Computer Science Foundations
+# Programming as a Way of Life
+# Homework 3: DNA analysis (Part 1)
+
+# This program reads DNA sequencer output and computes statistics, such as
+# the GC content.  Run it from the command line like this:
+#   python dna_analysis.py myfile.fastq
+
+
+###########################################################################
+### Libraries
+###
+
+# The sys module supports reading files, command-line arguments, etc.
+import sys
+
+
+###########################################################################
+### Read the nucleotides into a variable named seq
+###
+
+# You need to specify a file name
+if len(sys.argv) < 2:
+    print "You must supply a file name as an argument when running this program."
+    sys.exit(2)
+# The file name specified on the command line, as a string.
+filename = sys.argv[1]
+# A file object from which data can be read.
+inputfile = open(filename)
+
+# All the nucleotides in the input file that have been read so far.
+seq = ""
+# The current line number (= the number of lines read so far).
+linenum = 0
+
+
+for line in inputfile:
+    linenum = linenum + 1
+    # if we are on the 2nd, 6th, 10th line...
+    if linenum % 4 == 2:
+        # Remove the newline characters from the end of the line
+        line = line.rstrip()
+        seq = seq + line
+
+
+###########################################################################
+### Compute statistics
+###Initial value of gcount, ccount, acount, tcount
+gcount=0
+ccount=0
+acount=0
+tcount=0
+
+
+# Total nucleotides seen so far.
+total_count = 0
+
+# Number of G and C nucleotides seen so far.
+# Number of A and T nucleotides seen so far.
+gc_count = 0
+at_count =0
+
+# for each base pair in the string,
+for bp in seq:
+    # increment the total number of bps we've seen
+    total_count = total_count + 1
+    # output of gcount,count,acount,tcount
+    if bp =='G':
+        gcount= gcount +1
+    elif bp == 'C':
+        ccount = ccount +1
+    elif bp == 'A':
+        acount = acount +1
+    elif bp == 'T':
+        tcount = tcount +1
+
+# next, if the bp is a G or a C,
+    if bp == 'C' or bp == 'G':
+        # increment the count of gc
+        gc_count = gc_count + 1
+    elif bp == 'A' or bp == 'T':
+        at_count = at_count +1
+# the sum of gcount,count,acount,tcount
+sumcount = (acount+ccount+gcount+tcount) 
+       
+
+
+# divide the gc_count and at_count by the total_count
+gc_content = float(gc_count) / total_count
+at_content = float(at_count) / total_count
+
+
+seqlength=len(seq)
+#calculate the ratio of (A+T)/(G+C)
+atgcratio= float(acount+tcount)/(gcount+ccount)
+
+#categorize microorganisms
+
+if gc_content > 0.6:
+    GCclass= 'high GC content'
+elif gc_content < 0.4:
+    GCclass= 'low GC content'
+else:
+    GCclass= 'moderate GC content'
+
+
+
+# Print the answer
+print 'GC-content:', gc_content
+print 'AT-content:', at_content
+print 'G count:', gcount
+print 'C count:', ccount
+print 'A count:', acount
+print 'T count:', tcount
+print 'Sum count:', sumcount
+print 'Total count:', total_count
+print 'seq length:', seqlength
+print 'AT/GC Ratio:',atgcratio
+print 'GC Classification:',GCclass
+
