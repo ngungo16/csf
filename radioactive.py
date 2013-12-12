@@ -1,0 +1,1 @@
+Radio_Active = ['Pu', 'Am', 'Pm', 'Pa', 'U', 'Es', 'Fm', 'Uut', 'Uuq', 'Cm', 'Md', 'No', 'Np', 'At', 'Lr', 'Rf', 'Mt', 'Fr', 'Bk', 'Rn', 'Rg', 'Cn', 'Uup', 'Ds', 'Tc', 'Cf','Ra', 'Ac', 'Th', 'Po', 'Uuh', 'Uus', 'Db', 'Sg', 'Bh', 'Hs', 'Uuo']
