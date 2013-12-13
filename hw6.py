@@ -18,14 +18,6 @@
 
  
 
-
- 
-
-
-
-
-
-
 # Problem 4:Sorting lists
 # Write a script that sorts the radio active list alphabetically (radioactive.txt)
 
